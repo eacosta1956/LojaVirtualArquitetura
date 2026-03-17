@@ -12,7 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LojaVirtualArquitetura">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.usuarios.UsuariosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.postagens.PostagensActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.carrinhos.CarrinhosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

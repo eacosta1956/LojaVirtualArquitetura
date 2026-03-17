@@ -1,4 +1,4 @@
-package com.eldoncosta.lojavirtualarquitetura
+package com.eldoncosta.lojavirtualarquitetura.ui.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
