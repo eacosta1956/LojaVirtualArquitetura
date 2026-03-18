@@ -2,6 +2,7 @@ package com.eldoncosta.lojavirtualarquitetura.data.api
 
 import com.eldoncosta.lojavirtualarquitetura.data.model.CarrinhoResponse
 import com.eldoncosta.lojavirtualarquitetura.data.model.ProdutoResponse
+import com.eldoncosta.lojavirtualarquitetura.data.model.UsuarioResponse
 import retrofit2.http.GET
 
 interface ApiService {
@@ -10,4 +11,7 @@ interface ApiService {
 
     @GET("carts")
     suspend fun getCarrinhos(): CarrinhoResponse
+
+    @GET("users")
+    suspend fun getUsuarios(): UsuarioResponse
 }

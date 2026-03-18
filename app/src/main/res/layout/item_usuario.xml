@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardBackgroundColor="@color/fundo_card"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/texto_branco">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <!-- Foto do Usuário (Circular com Glide) -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgUsuario"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+            android:background="@color/fundo_tela" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNomeUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome do Usuário"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/texto_branco" />
+
+            <TextView
+                android:id="@+id/txtEmailUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email@exemplo.com"
+                android:textColor="@color/preco_destaque" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
