@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.eldoncosta.lojavirtualarquitetura.data.model.Produto
 import com.eldoncosta.lojavirtualarquitetura.databinding.ItemProdutoBinding
+import com.bumptech.glide.Glide
 
 class ProdutoAdapter(private val lista: List<Produto>) :
     RecyclerView.Adapter<ProdutoAdapter.ProdutoViewHolder>() {
@@ -20,7 +21,9 @@ class ProdutoAdapter(private val lista: List<Produto>) :
         val produto = lista[position]
         holder.binding.txtNomeProduto.text = produto.title
         holder.binding.txtPrecoProduto.text = "U$ ${produto.price}"
-        // Nota: No Commit 4 adicionaremos o carregamento da imagem com Glide
+        Glide.with(holder.binding.root.context)
+            .load(produto.thumbnail)
+            .into(holder.binding.imgProduto)
     }
 
     override fun getItemCount() = lista.size

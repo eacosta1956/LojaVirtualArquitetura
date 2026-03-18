@@ -3,10 +3,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.produtos.ProdutosActivity">
+    android:background="@color/fundo_tela"
+    android:fitsSystemWindows="true">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProdutos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_produto" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

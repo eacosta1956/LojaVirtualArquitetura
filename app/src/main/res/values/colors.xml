@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="fundo_tela">#003055</color>     <!-- Azul bem escuro -->
+    <color name="fundo_card">#024C7F</color>     <!-- Azul médio -->
+    <color name="texto_branco">#FFFFFF</color>   <!-- Branco puro -->
+    <color name="preco_destaque">#8DC3E2</color> <!-- Azul acinzentado claro -->
 </resources>
