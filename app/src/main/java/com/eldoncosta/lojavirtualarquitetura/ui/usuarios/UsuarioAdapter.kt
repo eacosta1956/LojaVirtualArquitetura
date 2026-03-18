@@ -22,9 +22,11 @@ class UsuarioAdapter(private val lista: List<Usuario>) :
         holder.binding.txtNomeUsuario.text = "${usuario.firstName} ${usuario.lastName}"
         holder.binding.txtEmailUsuario.text = usuario.email
 
-        // Carregando a foto do usuário com Glide
+        // Carregando a foto do usuário com Glide (Agora com tratamento de erro)
         Glide.with(holder.binding.root.context)
             .load(usuario.image)
+            .placeholder(android.R.drawable.ic_menu_gallery) // Aparece enquanto carrega
+            .error(android.R.drawable.stat_notify_error)    // Aparece se der erro
             .into(holder.binding.imgUsuario)
     }
 
