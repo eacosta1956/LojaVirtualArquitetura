@@ -11,6 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LojaVirtualArquitetura">
+
+        <activity
+            android:name=".ui.produtos.ProdutosActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.usuarios.UsuariosActivity"
             android:exported="false" />
