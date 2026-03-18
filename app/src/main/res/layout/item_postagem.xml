@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardBackgroundColor="@color/fundo_card"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/texto_branco">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txtTituloPostagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_branco"
+            android:text="Título da Postagem" />
+
+        <TextView
+            android:id="@+id/txtCorpoPostagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/texto_branco"
+            android:alpha="0.8"
+            android:text="Este é o corpo da postagem que pode ser bem longo..." />
+
+        <TextView
+            android:id="@+id/txtTagsPostagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:text="#tags #exemplo"
+            android:textColor="@color/preco_destaque"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
