@@ -1,12 +1,14 @@
 package com.eldoncosta.lojavirtualarquitetura.ui.postagens
 
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.eldoncosta.lojavirtualarquitetura.databinding.ActivityPostagensBinding
 
 class PostagensActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityPostagensBinding
+    private val viewModel: PostagemViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,6 +18,14 @@ class PostagensActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // Configura um título na barra superior para teste
-        supportActionBar?.title = "Postagens"
+        supportActionBar?.title = "Blog / Postagens"
+
+        // Observa a lista de postagens
+        viewModel.postagens.observe(this) { lista ->
+            binding.rvPostagens.adapter = PostagemAdapter(lista)
+        }
+
+        // Carrega os dados da API
+        viewModel.carregarPostagens()
     }
 }
