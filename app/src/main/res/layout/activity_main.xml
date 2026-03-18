@@ -5,17 +5,22 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/fundo_tela"
+    android:fitsSystemWindows="true"
     android:padding="16dp">
 
     <TextView
         android:id="@+id/txtTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
         android:text="Loja Virtual - Menu"
+        android:textColor="@color/texto_branco"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <GridLayout
         android:layout_width="match_parent"
@@ -35,8 +40,9 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="12dp"
             app:cardElevation="4dp"
-            app:strokeWidth="2dp"
-            app:strokeColor="#FFFFFF">
+            app:cardBackgroundColor="@color/fundo_card"
+            app:strokeColor="@color/texto_branco"
+            app:strokeWidth="1dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -51,7 +57,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="PRODUTOS"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textColor="@color/texto_branco"/>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -64,8 +71,9 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="12dp"
             app:cardElevation="4dp"
-            app:strokeWidth="2dp"
-            app:strokeColor="#FFFFFF">
+            app:cardBackgroundColor="@color/fundo_card"
+            app:strokeColor="@color/texto_branco"
+            app:strokeWidth="1dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -80,7 +88,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="CARRINHOS"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textColor="@color/texto_branco"/>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -93,8 +102,9 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="12dp"
             app:cardElevation="4dp"
-            app:strokeWidth="2dp"
-            app:strokeColor="#FFFFFF">
+            app:cardBackgroundColor="@color/fundo_card"
+            app:strokeColor="@color/texto_branco"
+            app:strokeWidth="1dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -109,7 +119,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="USUARIOS"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textColor="@color/texto_branco"/>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -122,8 +133,9 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="12dp"
             app:cardElevation="4dp"
-            app:strokeWidth="2dp"
-            app:strokeColor="#FFFFFF">
+            app:cardBackgroundColor="@color/fundo_card"
+            app:strokeColor="@color/texto_branco"
+            app:strokeWidth="1dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -138,7 +150,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="POSTAGENS"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textColor="@color/texto_branco"/>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
